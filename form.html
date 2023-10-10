@@ -1,0 +1,60 @@
+<htmL>
+<head>
+    <title>
+        Interactive Form
+    </title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form>
+        <div class="center">
+            <p>
+            <fieldset>
+                <legend> Enter your Details<span aria-label="required">*</span></legend>
+                <h2>Username</h2>
+                <input type="text" name="username" id="username" placeholder="UserName" /><br>
+                <h2>Email</h2>
+                <input type="email" name="email" placeholder="Email" id="email" /><br>
+                <h2>Password</h2>
+                <input type="password" name="password" placeholder="Password" id="password" />
+                <br><br>
+                <legend>Gender<span aria-label="required">*</span></legend>
+                <br>
+                <input type="radio" value="Male"><label>Male</label>
+                <input type="radio" value="Female"><label>Female</label>
+                <input type="radio" value="Other"><label>Other</label>
+            </fieldset>
+            </p>
+            <p>
+                <label for="n1">Age</label>
+                <input type="number" min="15" max="150" step="1" id="n1" name="age" pattern="\d+">
+            </p>
+            <p>
+                <label for="t1">What are your Qualifications?<span aria-label="required">*</span></label>
+                <input type="text" name="edu" list="l1" required>
+                <datalist id="l1">
+                    <option>10th</option>
+                    <option>12th</option>
+                    <option>Graduate</option>
+                    <option>Post-Graduate</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="t2">Phone Number</label><br>
+                <input type="number" name="phonenumber" placeholder="Phone Number" id="Phno" />
+                <br>
+            </p>
+            <p>
+                <label for="t3">Leave a Feedback</label>
+                <textarea name="msg" maxlength="200" rows="5"></textarea>
+            </p>
+            <p>
+                <button>Submit</button>
+                <button>Reset</button>
+            </p>
+        </div>
+    </form>
+</body>
+
+</htmL>

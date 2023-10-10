@@ -1,0 +1,39 @@
+form {
+    font: 1em sans-serif;
+    max-width: 600px;
+  }
+  .center {
+    margin-left: 480px;
+    width: 100%;
+    padding: 10px;
+  }
+  p > label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  fieldset {
+    width: 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+  }
+  
+  
+  input:focus:invalid {
+    box-shadow: none;
+  }
+body{
+    background-image: url("background1.jpg");
+}
+button{
+    box-shadow: 12px 0px 10px 0px #333;
+    padding: 12px;
+    border: 0px;
+    margin-left:140px;
+    background-color: rgb(178, 225, 178);
+    align-items: center;
+    font-size: 18px;
+}
